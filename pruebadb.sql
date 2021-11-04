@@ -33,7 +33,9 @@ CREATE TABLE `pruebadb`.`usuario` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
     
+    -- user:admin password: 1234
     INSERT INTO `pruebadb`.`usuario` (`username`, `password`) VALUES ('admin', '$2a$10$1kPqcX/kz30LfN1GuCmZlOOzd7Lm8H4XW/WD05w39ssJ0Rq5OcAA6');
+    -- user: user1 password: 123
     INSERT INTO `pruebadb`.`usuario` (`username`, `password`) VALUES ('user1', '$2a$10$lSvpEKeaReHQvkkw3TfP..DJIcwi.YxJLp30106ge0aBnVgMJrHry');
     
     INSERT INTO `pruebadb`.`rol` (`nombre`, `id_usuario`) VALUES ('ROLE_ADMIN', '1');
